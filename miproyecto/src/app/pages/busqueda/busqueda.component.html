@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Buscar Posts</h2>
+  <input [(ngModel)]="termino" (input)="buscar()" placeholder="Buscar por título" class="form-control mb-3" />
+  <div *ngIf="filtrados.length === 0" class="alert alert-warning">Sin resultados</div>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let post of filtrados">
+      <strong>{{ post.title | titlecase }}</strong><br />
+      <span>{{ post.body | resumen:20 }}</span>
+    </li>
+  </ul>
+</div>
