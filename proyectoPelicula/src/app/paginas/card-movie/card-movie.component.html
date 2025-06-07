@@ -1,12 +1,10 @@
-<div>
-    <div>
-        <p>{{movie.Year}}</p>
-    </div>
-    <div>
-        <img src="{{getImagen()}}" [alt]="movie.Title" />
-    </div>
-    <div>
-        <span>{{movie.Type}}</span>
-        <h3>{{movie.Title}}</h3>
+<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card" style="width: 18rem;">
+            <img src="{{getImagen()}}" class="card-img-top" [alt]="movie.Title">
+        <div class="card-body">
+            <h5 class="card-title">{{movie.Title}}</h5>
+            <p class="card-text">Genero: {{movie.Type}}</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
     </div>
 </div>

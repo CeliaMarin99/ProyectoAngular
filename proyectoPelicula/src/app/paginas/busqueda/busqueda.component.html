@@ -1,10 +1,18 @@
-<h1>Buscar Peliculas</h1>
-<input type="text" #search>
-<button (click)="getMovies(search.value)">Buscar</button>
-<div *ngIf="movies.length >0; else empty">
-    <app-card-movie *ngFor="let movie of movies"[movie]="movie"></app-card-movie>
-</div>
+<div class="container my-5 justify-content-center" style="min-height: 90vh;">
+  <h1 class="text-center mb-4">Buscador de Películas</h1>
 
-<ng-template #empty>
-    <p>No se encontraron resultados</p>
-</ng-template>
+  <div class="d-flex justify-content-center mb-5">
+    <div class="input-group input-group-lg w-75 w-md-50">
+      <input type="text"  class="form-control" #search placeholder="Buscar películas...">
+      <button class="btn btn-primary" (click)="getMovies(search.value)">Buscar</button>
+    </div>
+  </div>
+
+  <div class="row" *ngIf="movies.length >0; else empty">
+            <app-card-movie *ngFor="let movie of movies"[movie]="movie"></app-card-movie>
+    </div>
+
+    <ng-template #empty class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <p>No se encontraron resultados</p>
+        </ng-template>
+  </div>
