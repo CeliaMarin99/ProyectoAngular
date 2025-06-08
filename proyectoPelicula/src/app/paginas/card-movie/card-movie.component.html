@@ -1,10 +1,9 @@
-<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-        <div class="card" style="width: 18rem;">
-            <img src="{{getImagen()}}" class="card-img-top" [alt]="movie.Title">
-        <div class="card-body">
-            <h5 class="card-title">{{movie.Title}}</h5>
-            <p class="card-text">Genero: {{movie.Type}}</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+
+<div class="card" style="width: 18rem;">
+    <img src="{{getImagen()}}" class="card-img-top" [alt]="movie.Title">
+    <div class="card-body">
+        <h5 class="card-title">{{movie.Title}}</h5>
+        <p class="card-text">Año: {{movie.Year}}</p>
+        <a href="https://www.imdb.com/title/{{movie.imdbID}}" class="btn btn-primary" target="_blank">Ver en IMDB</a>   
     </div>
 </div>

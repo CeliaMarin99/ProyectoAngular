@@ -10,6 +10,7 @@ import { FooterComponent } from './paginas/footer/footer.component';
 import { BienvenidaComponent } from './paginas/bienvenida/bienvenida.component';
 import { AcercadeComponent } from './paginas/acercade/acercade.component';
 import { Paginanoencontrada404Component } from './paginas/paginanoencontrada404/paginanoencontrada404.component';
+import { ResaltarPipe } from './pipes/resaltar.pipe';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { Paginanoencontrada404Component } from './paginas/paginanoencontrada404/
     BienvenidaComponent,
     AcercadeComponent,
     Paginanoencontrada404Component,
+    ResaltarPipe,
   ],
   imports: [
     BrowserModule,
