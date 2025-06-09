@@ -1,5 +1,5 @@
 .bg-image {
-  background-image: url('https://www.infobae.com/resizer/v2/https%3A%2F%2Fs3.amazonaws.com%2Farc-wordpress-client-uploads%2Finfobae-wp%2Fwp-content%2Fuploads%2F2018%2F05%2F03145843%2FFondango.jpg?auth=1bd6c0cd87d41fd3382fd92a4f68d07a88a09e2ef54b53375ce27059f534f12c&smart=true&width=992&height=558&quality=85');
+  background-image: url('/public/cine.jpg');
   background-size: cover;
   background-position: center;
   height: 500px;

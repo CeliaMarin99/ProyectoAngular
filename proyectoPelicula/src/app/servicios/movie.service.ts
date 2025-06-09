@@ -10,7 +10,7 @@ import { Movie } from '../interfaces/movies';
 export class MovieService {
 //api key 379577fc
 
-API_URL: string = 'http://www.omdbapi.com/?apikey=379577fc';
+API_URL: string = 'https://www.omdbapi.com/?apikey=379577fc';
   constructor(private http: HttpClient) { }
 
   getMovies(parametro: string): Observable<Movie[]>{
